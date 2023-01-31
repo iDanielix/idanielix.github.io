@@ -400,11 +400,12 @@ input[type=submit]:hover {
   height: auto;
   max-height: 30px;
   transition: 0.2s;
+  filter: invert(100%);
 }
 
 .botonHomeError:hover img {
-  filter: invert(100%);
-}
+  filter: invert(9%) sepia(57%) saturate(4562%) hue-rotate(230deg)
+  brightness(98%) contrast(99%);}
 .error{
   padding-top: 100px;
   width: 100%;
