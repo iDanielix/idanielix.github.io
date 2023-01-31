@@ -1,0 +1,92 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
+  </head>
+  <body>
+    <!-- Encabezado y Botones desplegabes -->
+    <div class="encabezado">
+      <div class="botonHome">
+        <a href="../index.html"> <img src="../icons/homeb.png" alt="" /> </a>
+      </div>
+    
+      <div class="botonEncabezado">
+        <p>Atlus</p>
+      </div>
+      <!-- Desplegable -->
+      <div class="botonEncabezado">
+        <p>Juegos</p>
+        <div class="desplegable uno">
+          <a href="/p/persona1.html"> Persona</a>
+        </div>
+        <div class="desplegable">
+          <a href="/p/persona2IS.html"> Persona 2 Innocent Sin</a>
+        </div>
+        <div class="desplegable">
+          <a href="/p/persona2EP.html"> Persona 2 Eternal Punishment</a>
+        </div>
+        <div class="desplegable"><a href="/games/p3.html"> Persona 3</a></div>
+        <div class="desplegable"><a href="/p/persona4.html"> Persona 4</a></div>
+        <div class="desplegable"><a href="/p/persona5.html"> Persona 5</a></div>
+      </div>
+      <a href="./form.html">
+        <div class="botonEncabezado">
+          <p>Contacto</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="articulo">
+      <h1 style="font-size:30pt;">Formulario de Soporte</h1>
+      <div class="soporteParent">
+        <div class="soporte">
+          <form action="./formError.html">
+            <label for="nombre">Nombre</label>
+            <br>
+            <input id="nombre" placeholder="Raul"type="text">
+            <br>
+            <label for="apellidos">Apellidos</label>
+            <br>
+            <input id="apellidos" placeholder="Lopez"type="text">
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input id="email" placeholder="ejemplo123@gmail.com"type="text">
+            <br>
+            <label for="tlf">Numero de telefono</label>
+            <br>
+            <input id="tlf" placeholder="684 16 94 20"type="text">
+            <br>
+            <label for="sex">Sexo</label>
+            <br>
+            <input type="radio" name="sex" value="Hombre"> Hombre
+            <input type="radio" name="sex" value="Mujer"> Mujer
+            <input type="radio" name="sex" value="Otro"> Otro 
+            <br><br>
+            <label for="region">Region</label>
+            <br>
+            <select  id="region" name="region">
+              <option value="" disabled selected>Selecciona tu region</option>
+              <option value="Europa">Europa</option>
+              <option value="Asia">Asia</option>
+              <option value="Oceania">Oceania</option>
+              <option value="Africa">Africa</option>
+              <option value="America del Norte">America del Norte</option>
+              <option value="America del Sur">America del Sur</option>
+            </select>
+            <br>
+            <label for="asunto">Asunto</label>
+            <br>
+            <textarea id="subject" name="asunto" placeholder="" style="height:200px;  resize: none;"></textarea>
+            <br>
+            <input type="submit" value="Enviar">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+

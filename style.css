@@ -1,0 +1,441 @@
+
+/* Fuente importada de google */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/*    font-family: Nunito; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+/* Encabezado + boton desplegable */
+html{
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+.encabezado {
+  background-color: #5d6e98;
+  height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 0;
+  box-shadow: -1px 1px 20px 4px rgba(0, 0, 0, 0.126);
+  z-index: 2;
+}
+
+.botonEncabezado {
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 100px;
+  transition: 0.2s;
+  text-align: center;
+  font-family: Nunito;
+  color: #ffff;
+  display: block;
+}
+
+.botonHome {
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 50px;
+  transition: 0.2s;
+  text-align: center;
+  font-family: Nunito;
+  color: #ffff;
+  display: block;
+  justify-content: center;
+}
+.botonHome img {
+  padding-top: 9px;
+  width: auto;
+  height: auto;
+  max-height: 30px;
+  filter: invert(100%);
+}
+
+.botonHome:hover {
+  transition: 0.1s;
+  background-color: #ffff;
+  color: #132374;
+}
+.botonHome:hover img {
+  filter: invert(9%) sepia(57%) saturate(4562%) hue-rotate(230deg)
+    brightness(98%) contrast(99%);
+}
+
+.botonEncabezado:hover {
+  transition: 0.1s;
+  background-color: #ffff;
+  color: #132374;
+}
+
+.botonEncabezado:hover .desplegable {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s;
+}
+.desplegable:hover {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s;
+}
+
+.desplegable:hover a {
+  /* color aqua tambien */
+  color: rgb(92, 193, 255);
+  transition: 0.1s;
+  font-size: 12pt;
+}
+
+.desplegable:hover {
+  background-color: #6e78a7;
+}
+.desplegable {
+  float: left;
+  clear: both;
+  text-align: left;
+  height: 30px;
+  width: 230px;
+  background-color: #555c81;
+  display: block;
+  opacity: 0;
+  padding: 10px;
+  color: #ffff;
+  margin: 0 auto;
+  transition: 0.2s;
+  visibility: hidden;
+  text-decoration: none;
+}
+.desplegable a {
+  color: #ffff;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 11pt;
+}
+
+.desplegable:last-child {
+  border-radius: 0 0 5px 5px;
+}
+.uno {
+  border-radius: 5px 5px 0 0;
+}
+
+/* Pagina articulo */
+body {
+  background-color: #7c8cad;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.articulo {
+  padding-top: 2% ;
+  width: 90%;
+  clear: both;
+  font-family: Nunito;
+  text-align: justify;
+  margin: auto;
+  line-height: 20pt;
+  
+}
+
+/* BASES GALERIA */
+/* Para que la escala entre la img y img hover vaya bien el max width tiene que ser el mismo entre los dos  */
+.galeria img {
+  z-index: 1;
+  max-width: 300px;
+  object-fit: cover;  
+  width: 20%;
+  height: 22.5%;
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #4787c050;
+  box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.8);  transition: 0.2s;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.galeria img:hover {
+  max-width: 300px;
+  transition: 0.2s;
+  overflow: hidden; 
+  transform: scale(1.1);
+  filter: brightness(85%) ;
+
+}
+
+.galeria {
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+hr {
+  color: #5d6e98;
+}
+h1 {
+  color: #173274;
+}
+h2 {
+  color: #5d6e98;
+}
+/* Visualizador de imagenes */
+.container {
+ 
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.616); /* Black w/ opacity */
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  text-align: center;
+
+}
+
+#expandedImg {
+  height: 60%;
+  display: inline-block;
+  transition: 0.2s;
+  box-shadow: -1px 1px 20px 4px rgba(0, 0, 0, 0.126);
+}
+#expandedImg:hover {
+  filter: brightness(120%);
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+#imgtext {
+  padding-top: 20px;
+  font-family: Nunito;
+  text-align: center;
+  margin: auto;
+  line-height: 20pt;
+  color: white;
+}
+
+/* menu de juegos con imagenes */
+.juegos img {
+  z-index: 1;
+  max-width: 300px;
+  object-fit: cover;  
+  max-height: 35vh;
+  height: 300px;
+  display: inline-block;
+  margin: 10px;
+  box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.8);  
+  border-radius: 7px;
+  transition: 0.2s;
+
+}
+.juegos img:hover {
+  max-width: 300px;
+  overflow: hidden; 
+  transform: scale(1.05);
+  transition: 0.2s;
+  filter: brightness(70%);
+
+}
+.juegos{
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.681);
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  display: inline-block;
+  padding: 25px;
+  border-radius: 20px;
+  word-spacing: 1vw;
+  box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.8);  
+
+}
+.juegosParent{
+  width: 100%;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  padding: 2vh;
+}
+
+/* Reproductor de video */
+.video video{
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  border-radius: 20px;
+  word-spacing: 1vw;
+  box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.8);  
+
+}
+.video{
+  width: 100%;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  padding: 2vh;
+}
+
+.video2{
+  width: 70%;
+}
+.video video{
+  width: 100%
+}
+
+/* Formulario */
+.soporte{
+  width: 50%;
+  align-items: center;
+  text-align: left;
+  background-color: rgba(103, 103, 103, 0.681);
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  display: inline-block;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.8);  
+  font-weight: bold;
+}
+.soporteParent{
+  width: 100%;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  padding: 2vh;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Formulario easter egg */
+.rotate {
+  animation: spin 70s infinite linear;
+  transition: 1s;
+  width: 200px;
+}
+.rotate:hover {
+  animation: spin 0.1s infinite linear;
+  transition: 1s;
+
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.EncabezadobError{
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 200px;
+  transition: 0.2s;
+  text-align: left;
+  padding-left: 10px;
+  font-family: Nunito;
+  color: #ffff;
+  display: block;
+}
+.encabezadoError{
+  height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+.botonHomeError {
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  width: 50px;
+  text-align: center;
+  font-family: Nunito;
+  color: #ffff;
+  display: block;
+  justify-content: center;
+}
+.botonHomeError img {
+  padding-top: 9px;
+  width: auto;
+  height: auto;
+  max-height: 30px;
+  transition: 0.2s;
+}
+
+.botonHomeError:hover img {
+  filter: invert(100%);
+}
+.error{
+  padding-top: 100px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+
+}
+.errorP{
+  width: 100%;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+}
+
+.error h1{
+  font-size: 60pt;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3a92ea;
+}
+.error p{
+  color: rgba(255, 255, 255, 0.664);
+}
+.error p span{
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+}
+.errorB{
+  background: rgb(0,155,255);
+  background: linear-gradient(132deg, rgba(0,155,255,1) 0%, rgba(255,255,255,1) 100%);   background-attachment:fixed;
+height:100%;
+}
