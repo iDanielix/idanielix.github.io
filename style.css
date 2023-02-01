@@ -495,9 +495,23 @@ input[type=submit]:hover {
   left: 0;
   align-items: center;
   text-align: center;
-  visibility: hidden;
 
 }
 .bgExplosion img{
   height: 100vh;
+  animation: stop 1.7s;
+  opacity: 0;
+
+}
+@keyframes stop {
+  0%{
+    opacity: 1;
+  }
+  99%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+
+  }
 }
