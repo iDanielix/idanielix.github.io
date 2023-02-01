@@ -499,7 +499,7 @@ input[type=submit]:hover {
 }
 .bgExplosion img{
   height: 100vh;
-  animation: stop 1.7s;
+  animation: stop 1.5s;
   opacity: 0;
 
 }
