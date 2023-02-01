@@ -487,7 +487,12 @@ input[type=submit]:hover {
   height:100%;
   overflow: hidden;
 }
+.error2B{
+  background: rgb(127, 204, 255);
+  background-image: url("/img/skullTransparent.gif");  height:100%;
 
+  overflow: hidden;
+}
 .bgExplosion{
   width: 100%;
   position: absolute;
