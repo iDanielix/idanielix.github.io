@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../style.css" />
     <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
   </head>
-  <body>
+  <body class="formB">
     <!-- Encabezado y Botones desplegabes -->
     <div class="encabezado">
       <div class="botonHome">
@@ -39,7 +39,9 @@
     </div>
 
     <div class="articulo">
-      <h1 style="font-size:30pt;">Formulario de Soporte</h1>
+      <h1 style="font-size:30pt;">Formulario de Soporte</h1><p>
+        Introduzca sus datos en los siguientes campos para contactarnos
+      </p>
       <div class="soporteParent">
         <div class="soporte">
           <form action="./formError.html">
@@ -61,30 +63,40 @@
             <br>
             <label for="sex">Sexo</label>
             <br>
-            <input type="radio" name="sex" value="Hombre"> Hombre
-            <input type="radio" name="sex" value="Mujer"> Mujer
-            <input type="radio" name="sex" value="Otro"> Otro 
-            <br><br>
+            <div class="sex">
+              <input type="radio" name="sex" value="Hombre"> Hombre
+              <input type="radio" name="sex" value="Mujer"> Mujer
+              <input type="radio" name="sex" value="Otro"> Otro 
+              <input type="radio" name="sex" value="etc"> Prefiero no decirlo 
+            </div>
+            <br>
             <label for="region">Region</label>
             <br>
             <select  id="region" name="region">
-              <option value="" disabled selected>Selecciona tu region</option>
-              <option value="Europa">Europa</option>
-              <option value="Asia">Asia</option>
-              <option value="Oceania">Oceania</option>
-              <option value="Africa">Africa</option>
-              <option value="America del Norte">America del Norte</option>
-              <option value="America del Sur">America del Sur</option>
+              <option style="font-family: Arial;" value="" disabled selected>Selecciona tu region</option>
+              <option style="font-family: Arial;" value="Europa">Europa</option>
+              <option style="font-family: Arial;" value="Asia">Asia</option>
+              <option style="font-family: Arial;" value="Oceania">Oceania</option>
+              <option style="font-family: Arial;" value="Africa">Africa</option>
+              <option style="font-family: Arial;" value="America del Norte">America del Norte</option>
+              <option style="font-family: Arial;" value="America del Sur">America del Sur</option>
             </select>
             <br>
             <label for="asunto">Asunto</label>
             <br>
-            <textarea id="subject" name="asunto" placeholder="" style="height:200px;  resize: none;"></textarea>
+            <input id="asunto" placeholder=""type="text">
+            <br>
+            <label for="mensaje">Mensaje</label>
+            <br>
+            <textarea id="subject" name="mensaje" placeholder="" style="height:200px;  resize: none;"></textarea>
             <br>
             <input type="submit" value="Enviar">
           </form>
         </div>
       </div>
+    </div>
+    <div class="bg">
+      <img src="../img/jackFrostBg.png" alt="">
     </div>
   </body>
 </html>

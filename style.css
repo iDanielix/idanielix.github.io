@@ -252,14 +252,17 @@ h2 {
 .juegos{
   align-items: center;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.681);
+  /*background-color: rgba(255, 255, 255, 0.681);*/
+
   /* padding-top: 50px;
   padding-bottom: 50px; */
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(180, 180, 180) 100%);   display: inline-block;
   display: inline-block;
   padding: 25px;
   border-radius: 20px;
   word-spacing: 1vw;
-  box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.8);  
+  box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.8);  
 
 }
 .juegosParent{
@@ -300,13 +303,11 @@ h2 {
   width: 50%;
   align-items: center;
   text-align: left;
-  background-color: rgba(103, 103, 103, 0.681);
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
-  display: inline-block;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(198, 198, 198, 0.545) 0%, rgba(58, 58, 58, 0.468) 100%);   display: inline-block;
   padding: 25px;
   border-radius: 20px;
-  box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.8);  
+  box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.8);  
   font-weight: bold;
 }
 .soporteParent{
@@ -319,28 +320,60 @@ h2 {
 
 
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; 
+  padding: 12px; 
+  border-radius: 10px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  border: #b6b6b65a 2px solid;
+  background-color: #f3f9ff;
+  font-family: Nunito;
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  font-size: 18pt;
+  background-color: #284387;
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
   cursor: pointer;
+  transition: ease 0.3s;
+  width: 100%;
+  height: 60px;
+  font-family: Nunito;;
+  font-weight: bold;
+  border: #b6b6b65a 2px solid;
+
 }
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #092c87;
 }
 
+.sex{
+  font-weight: 1;
+}
+
+.bg{
+  width: 100%;
+  position: fixed;
+  bottom: 50px;
+  left: 38vw;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+
+}
+.bg img{
+  height: 60vh;
+  opacity: 20%;
+}
+
+.formB{
+  height:100%;
+  z-index: 100;
+}
 /* Formulario easter egg */
 .rotate {
   animation: spin 70s infinite linear;
@@ -451,6 +484,20 @@ input[type=submit]:hover {
 .errorB{
   background: rgb(0,155,255);
   background: linear-gradient(132deg, rgba(0,155,255,1) 0%, rgba(255,255,255,1) 100%);   background-attachment:fixed;
-  height:100%;overflow: hidden;
+  height:100%;
+  overflow: hidden;
 }
 
+.bgExplosion{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  text-align: center;
+  visibility: hidden;
+
+}
+.bgExplosion img{
+  height: 100vh;
+}
