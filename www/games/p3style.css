@@ -17,9 +17,11 @@
 }
 
 body {
-  background-color: #3F61A6;
+  background: rgb(101,152,255);
+  background: linear-gradient(180deg, rgba(101,152,255,1) 0%, rgba(0,43,129,1) 100%); 
   margin: 0 auto;
   width: 100%;
+  background-attachment: fixed;
 }
 
 .articulo {
@@ -35,6 +37,20 @@ body {
 }
 
 
+.bg{
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 38vw;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+
+}
+.bg img{
+  height: 60vh;
+  opacity: 20%;
+}
 
 /* HEADER */
 html{
@@ -243,79 +259,6 @@ h2 {
   color: white;
 }
 
-/* menu de juegos con imagenes */
-.juegos img {
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  transition: .5s ease;
-
-}
-.juegos img:hover {
- width: 4%;
- filter: saturate(150%) brightness(60%);
-}
-.juegos{
-  width: 82%;
-  height:350px;
-  max-height: 10%;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(180, 180, 180) 100%);   display: inline-block;
-  display: flex;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.8);  
-
-}
-#p1{
-  border-radius: 20px;
-}
-#p5{
-  border-radius: 0px 20px 20px 0;
-
-}
-/*
-.juegos{
-  align-items: center;
-  text-align: center;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(180, 180, 180) 100%);   display: inline-block;
-  display: inline-block;
-  padding: 25px;
-  border-radius: 20px;
-  word-spacing: 1vw;
-  box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.8);  
-
-}
-.juegos img {
-  z-index: 1;
-  max-width: 300px;
-  object-fit: cover;  
-  max-height: 35vh;
-  height: 300px;
-  display: inline-block;
-  margin: 10px;
-  box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.8);  
-  border-radius: 7px;
-  transition: 0.2s;
-
-}
-.juegos img:hover {
-  max-width: 300px;
-  overflow: hidden; 
-  transform: scale(1.05);
-  transition: 0.2s;
-  filter: brightness(70%);
-
-}
-*/
-.juegosParent{
-  width: 100%;
-  display: flex;  
-  justify-content: center;  
-  align-items: center;  
-  padding: 2vh;
-}
-
 /* Reproductor de video */
 .video video{
   align-items: center;
@@ -341,3 +284,57 @@ h2 {
   width: 100%
 }
 
+.videoParent{
+  clear: both;
+}
+
+.texto .portada{
+  width: 16%;
+  float: left;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px -10px;
+  margin-right: 20px;
+  transition: 0.5s ease;
+
+}
+
+.texto img:hover {
+  overflow: hidden; 
+  transform: scale(1.1);
+  filter: brightness(80%) ;
+
+}
+.texto p{
+  color: white;
+  
+}
+
+.texto .head{
+  font-size: 20pt;
+}
+.texto{
+  clear: both;
+padding-top: 50px;}
+
+.spriteL{
+  width: 16%;
+  float: left;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px -10px;
+  margin-right: 20px;
+  transition: 0.5s ease;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+  clear: both;
+}
+
+.spriteR{
+  clear: both;
+
+  width: 16%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px -10px;
+  margin-right: 20px;
+  transition: 0.5s ease;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+  float:right;
+}
