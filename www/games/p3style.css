@@ -281,7 +281,7 @@ h2 {
 }
 
 .video2{
-  width: 70%;
+  width: 50%;
 }
 .video video{
   width: 100%
@@ -291,6 +291,11 @@ h2 {
   clear: both;
 }
 
+.videoParent h1{
+  padding-top: 50px;
+}
+
+/* pagina */
 .texto .portada{
   width: 20%;
   float: left;
