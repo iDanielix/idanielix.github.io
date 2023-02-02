@@ -300,12 +300,9 @@ h2 {
   transition: 0.5s ease;
 
 }
-.texto table{
-  float: right;
-}
 .texto img:hover {
   overflow: hidden; 
-  transform: scale(1.1);
+  transform: scale(1.05);
   filter: brightness(80%) ;
 
 }
@@ -322,7 +319,7 @@ h2 {
 padding-top: 50px;}
 
 .spriteL{
-  width: 250  px;
+  width: 250px;
   max-width: 30%;
 
   float: left;
@@ -376,4 +373,39 @@ padding-top: 50px;}
 }
 #ken{
   width: 25%;
+}
+.char{
+  float: left;
+  clear: both;
+  padding: 3%;
+  background-color: #00000041;
+}
+
+
+.personajes h1{
+  padding-bottom: 30px;
+}
+
+
+.personajes img:hover {
+  overflow: hidden; 
+  transform: scale(1.05);
+  filter: brightness(80%) ;
+
+}
+.personajes p{
+  color: white;
+  
+}
+
+.personajes{
+  clear: both;
+padding-top: 50px;}
+
+
+.char:first-of-type{
+  border-radius: 20px 20px 0 0 ;
+}
+.char:last-of-type{
+  border-radius: 0 0 20px 20px;
 }
