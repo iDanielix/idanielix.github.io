@@ -6,13 +6,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 /* font-family: 'Open Sans', sans-serif; */
 
+/* BODY  */
+@keyframes load{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: #3F61A6;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.articulo {
+  padding-top: 2% ;
+  width: 90%;
+  clear: both;
+  font-family: Nunito;
+  text-align: justify;
+  margin: auto;
+  line-height: 20pt;
+  animation: load 0.7s ease;
+
+}
+
+
+
 /* HEADER */
 html{
   overflow-x: hidden;
   font-family: Nunito;
 }
 .encabezado {
-  background-color: #5d6e98;
+  background-color: #303E8C;
   height: 50px;
   position: -webkit-sticky;
   position: sticky;
@@ -31,7 +61,7 @@ html{
   transition: 0.2s;
   text-align: center;
   font-family: Nunito;
-  color: #ffff;
+  color: #D5E7F2;
   display: block;
 }
 
@@ -58,8 +88,8 @@ html{
 
 .botonHome:hover {
   transition: 0.1s;
-  background-color: #ffff;
-  color: #132374;
+  background-color: #D5E7F2;
+  color: #303E8C;
 }
 .botonHome:hover img {
   filter: invert(9%) sepia(57%) saturate(4562%) hue-rotate(230deg)
@@ -68,7 +98,7 @@ html{
 
 .botonEncabezado:hover {
   transition: 0.1s;
-  background-color: #ffff;
+  background-color: #D5E7F2;
   color: #132374;
 }
 
@@ -123,33 +153,6 @@ html{
 }
 
 
-/* BODY  */
-@keyframes load{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
-body {
-  background-color: #7c8cad;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.articulo {
-  padding-top: 2% ;
-  width: 90%;
-  clear: both;
-  font-family: Nunito;
-  text-align: justify;
-  margin: auto;
-  line-height: 20pt;
-  animation: load 0.7s ease;
-
-}
 
 /* GALERIA */
 /* Para que la escala entre la img y img hover vaya bien el max width tiene que ser el mismo entre los dos  */
@@ -182,13 +185,13 @@ body {
   text-align: center;
 }
 hr {
-  color: #5d6e98;
+  color: #D5E7F2;
 }
 h1 {
-  color: #173274;
+  color: #D5E7F2;
 }
 h2 {
-  color: #5d6e98;
+  color: #8AB5BF;
 }
 
 /* Visualizador de imagenes */
@@ -246,33 +249,30 @@ h2 {
   flex-grow: 1;
   object-fit: cover;
   transition: .5s ease;
-  opacity: 70%;
+
 }
 .juegos img:hover {
  width: 4%;
- filter: saturate(150%);
- opacity: 100%;
+ filter: saturate(150%) brightness(60%);
 }
-
 .juegos{
   width: 82%;
   height:350px;
   max-height: 10%;
   background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);   display: inline-block;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(180, 180, 180) 100%);   display: inline-block;
   display: flex;
   border-radius: 20px;
   box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.8);  
-  
+
 }
 #p1{
-  border-radius: 20px 0 0 20px;
+  border-radius: 20px;
 }
 #p5{
   border-radius: 0px 20px 20px 0;
 
 }
-
 /*
 .juegos{
   align-items: center;
@@ -341,235 +341,3 @@ h2 {
   width: 100%
 }
 
-/* Formulario */
-.soporte{
-  width: 45%;
-  align-items: center;
-  text-align: left;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(198, 198, 198, 0.545) 0%, rgba(58, 58, 58, 0.468) 100%);   display: inline-block;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.8);  
-  font-weight: bold;
-}
-.soporteParent{
-  width: 100%;
-  display: flex;  
-  justify-content: center;  
-  align-items: center;  
-  padding: 2vh;
-}
-
-
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 10px; 
-  border-radius: 10px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px;
-  border: #b6b6b65a 2px solid;
-  background-color: #f3f9ff;
-  font-family: Nunito;
-}
-
-input[type=submit] {
-  font-size: 18pt;
-  background-color: #284387;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: ease 0.3s;
-  width: 100%;
-  height: 60px;
-  font-family: Nunito;;
-  font-weight: bold;
-  border: #b6b6b65a 2px solid;
-
-}
-
- 
-input[type=submit]:hover {
-  background-color: #092c87;
-}
-
-.sex{
-  font-weight: 1;
-}
-
-.bg{
-  width: 100%;
-  position: fixed;
-  bottom: 50px;
-  left: 38vw;
-  align-items: center;
-  text-align: center;
-  z-index: -1;
-
-}
-.bg img{
-  height: 60vh;
-  opacity: 20%;
-}
-
-.formB{
-  height:100%;
-  z-index: 100;
-}
-/* Formulario easter egg */
-.rotate {
-  animation: spin 70s infinite linear;
-  transition: 1s;
-  width: 200px;
-}
-.rotate:hover {
-  animation: spin 0.1s infinite linear;
-  transition: 1s;
-
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-@keyframes spin3d {
-  from {
-    transform: rotate3d(1,1,1,0deg);
-  }
-  to {
-    transform: rotate3d(1,1,1,359deg);
-  }
-}
-
-.EncabezadobError{
-  float: left;
-  margin: 0 auto;
-  padding: 0;
-  height: 100%;
-  width: 200px;
-  transition: 0.2s;
-  text-align: left;
-  padding-left: 10px;
-  font-family: Nunito;
-  color: #ffff;
-  display: block;
-}
-.encabezadoError{
-  height: 50px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  margin-bottom: 0;
-  z-index: 2;
-}
-
-.botonHomeError {
-  float: left;
-  margin: 0 auto;
-  padding: 0;
-  width: 50px;
-  text-align: center;
-  font-family: Nunito;
-  color: #ffff;
-  display: block;
-  justify-content: center;
-}
-.botonHomeError img {
-  padding-top: 9px;
-  width: auto;
-  height: auto;
-  max-height: 30px;
-  transition: 0.2s;
-  filter: invert(100%);
-}
-
-.botonHomeError:hover img {
-  filter: invert(9%) sepia(57%) saturate(4562%) hue-rotate(230deg)
-  brightness(98%) contrast(99%);}
-.error{
-  padding-top: 100px;
-  width: 100%;
-  align-items: center;
-  text-align: center;
-  display: inline-block;
-  animation: 3s spin ease;
-
-
-}
-.errorP{
-  width: 100%;
-  display: flex;  
-  justify-content: center;  
-  align-items: center;  
-}
-
-.error h1{
-  font-size: 60pt;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #3a92ea;
-  animation: spin3d 2s infinite linear;
-  transition: 1s;
-}
-.error p{
-  color: rgba(255, 255, 255, 0.664);
-  
-}
-.error p span{
-  color: white;
-  font-size: 14pt;
-  font-weight: bold;
-}
-.errorB{
-  background: rgb(0,155,255);
-  background: linear-gradient(132deg, rgba(0,155,255,1) 0%, rgba(255,255,255,1) 100%);   background-attachment:fixed;
-  height:100%;
-  overflow: hidden;
-}
-.error2B{
-  background: rgb(127, 204, 255);
-  background-image: url("/img/skullTransparent.gif");  height:100%;
-
-  overflow: hidden;
-}
-.bgExplosion{
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  align-items: center;
-  text-align: center;
-  visibility: hidden;
-
-}
-.bgExplosion img{
-  height: 100vh;
-  animation: stop 2s;
-  opacity: 0;
-  visibility: hidden;
-
-}
-@keyframes stop {
-  0%{
-    opacity: 0;
-    visibility: visible;
-  }
-  2%{
-    opacity: 1;
-    visibility: visible;
-  }
-  90%{
-    opacity: 0;
-    visibility: visible;
-  }
-  100%{
-    opacity: 0;
-    visibility: hidden;
-  }
-}

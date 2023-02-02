@@ -1,86 +1,180 @@
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
-    
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./p3style.css" />
+    <link rel="icon" type="image/x-icon" href="../../icons/favicon.ico" />
+  </head>
+  <body>
+
+    <!-- Encabezado y Botones desplegabes -->
     <div class="encabezado">
-        <div class="botonHome">
-            <a href="/index.html">           <img src="/icons/homeb.png" alt="">
-            </a>
-        </div>
-        <div class="botonEncabezado">
-            <p>
-                Inicio
-            </p>
-        </div>
-        <div class="botonEncabezado">
-            <p>
-                Atlus
-            </p>
-        </div>
-        <div class="botonEncabezado">
-            <p>
-                Juegos 
-            </p>
-            <div class="desplegable"> <a href="/p/persona1.html"> Persona</a> </div>
-            <div class="desplegable"> <a href="/p/persona2IS.html"> Persona 2 Innocent Sin</a></div>
-            <div class="desplegable"> <a href="/p/persona2EP.html"> Persona 2 Eternal Punishment</a></div>
-            <div class="desplegable"> <a href="/games/p3.html"> Persona 3</a> </div>
-            <div class="desplegable"> <a href="/p/persona4.html"> Persona 4</a></div>
-            <div class="desplegable"> <a href="/p/persona5.html"> Persona 5</a></div>
+      <div class="botonHome">
+        <a href="/index.html"> <img src="../../icons/homeb.png" alt="" /> </a>
+      </div>
 
-           
-        </div>
-        <div class="botonEncabezado">
-            <p>
-                Contacto
-            </p>
-        </div>
+      <div class="botonEncabezado">
+        <p>Atlus</p>
+      </div>
 
-    </div>
-
+      <!-- Desplegable juegos -->
+      <div class="botonEncabezado">
+        <p>Juegos</p>
+        <div class="desplegable uno">
+          <a href="/p/persona1.html"> Persona</a>
+        </div>
+        <div class="desplegable">
+          <a href="/p/persona2IS.html"> Persona 2 Innocent Sin</a>
+        </div>
+        <div class="desplegable">
+          <a href="/p/persona2EP.html"> Persona 2 Eternal Punishment</a>
+        </div>
+        <div class="desplegable"><a href="./p3.html"> Persona 3</a></div>
+        <div class="desplegable"><a href="/p/persona4.html"> Persona 4</a></div>
+        <div class="desplegable"><a href="/p/persona5.html"> Persona 5</a></div>
+      </div>
     
-    <div class="articulo">
-        
-        <h1>Galeria</h1>
-        <hr>
-        <br>
-        <div class="galeria">
-            <a href="index.html#view">
-                <img src="/img/p3/screenshots/1.png" alt="Test" > 
-            </a>
-            <a href="index.html#view">
-                <img src="/img/p3/screenshots/2.jpeg" alt="Test" > 
-            </a>
-            <a href="index.html#view">
-                <img src="/img/p3/screenshots/3.jpeg" alt="Test" > 
-            </a>
-            <a href="index.html#view">
-                <img src="/img/p3/screenshots/4.png" alt="Test" > 
-            </a>
-            <a href="index.html#view">
-                <img src="/img/p3/screenshots/5.jpg" alt="Test" > 
-            </a>
-            <a href="index.html#view">  
-                <img src="/img/p3/screenshots/5.webp" alt="Test" > 
-            </a>
-            <a href="index.html#view">
-                <img src="/img/p3/screenshots/6.jpg" alt="Test" > 
-            </a>
-            <a href="index.html#view">
-                <img src="/img/p3/screenshots/7.jpg" alt="Test" > 
-            </a>
-            <a href="index.html#view">
-                <img src="/img/p3/screenshots/8.jpg" alt="Test" > 
-            </a>
-            <a href="index.html#view">
-                <img src="/img/p3/screenshots/9.jpg" alt="Test" > 
-            </a>
+      <!-- Desplegable Tienda -->
+      <div class="botonEncabezado">
+        <p>Tienda</p>
+        <div class="desplegable uno">
+          <a href="https://atlusshop.myshopify.com/">Shop Atlus</a>
         </div>
-        
+        <div class="desplegable">
+          <a href="https://persona.atlus.com/series/">Portal de SEGA</a>
+        </div>
+        <div class="desplegable">
+          <a href="https://store.steampowered.com/developer/ATLUS">Steam</a>
+        </div>
+      </div>
+
+      <a href="www\form.html">
+        <div class="botonEncabezado">
+          <p>Contacto</p>
+        </div>
+      </a>
     </div>
-</body>
+
+    <div class="articulo">
+      <p style="font-size: 17pt">
+        <span style="font-weight: bold">Persona</span> es una saga de juegos de
+        rol japonesa desarrollada por Atlus. La serie sigue a un grupo de
+        jóvenes que luchan contra las fuerzas oscuras usando sus habilidades
+        personales y misteriosos alter egos conocidos como Personas. La serie es
+        conocida por su combinación única de elementos de juegos de rol,
+        simulación social y psicología. Con una cultura pop fuerte y una base de
+        seguidores leales, la serie ha sido un éxito en Japón y en todo el
+        mundo.
+      </p>
+      <h1 style="text-align: center">Juegos principales</h1>
+      <div class="juegosParent">
+        <div class="juegos">
+          <img src="img/p1/boxart/p1.png" alt="Persona 1" id="p1" />
+          <img src="img/p2IS/boxart/p2.png" alt="Persona 2: Innocent Sin" id="p2is"/>
+          <img src="img/p2EP/p2ep.png" alt="Persona 2: Eternal Punishment" id="p2ep"/>
+          <img src="img/p3/boxart/p3.png" alt="Persona 3" id="p3" />
+          <img src="img/p4/boxart/p4.jpg" alt="Persona 4" id="p4" />
+          <img src="img/p5/boxart/p5Clear.png" alt="Persona 5"id="p5" />
+        </div>
+      </div>
+      <h1>Galeria</h1>
+      <hr />
+      <br />
+      <div class="galeria">
+        <img
+          src="img/p3/screenshots/1.png"
+          alt="Screenshot de Persona 3"
+          onclick="abrir(this)"
+        />
+        <img
+          src="img/p3/screenshots/2.jpeg"
+          alt="Screenshot de Persona 3"
+          onclick="abrir(this)"
+        />
+        <img
+          src="img/p3/screenshots/3.jpeg"
+          alt="Screenshot de Persona 3"
+          onclick="abrir(this)"
+        />
+        <img
+          src="img/p3/screenshots/4.png"
+          alt="Screenshot de Persona 3"
+          onclick="abrir(this)"
+        />
+        <img
+          src="img/p3/screenshots/5.jpg"
+          alt="Screenshot de Persona 3"
+          onclick="abrir(this)"
+        />
+        <img
+          src="img/p3/screenshots/5.webp"
+          alt="Screenshot de Persona 3"
+          onclick="abrir(this)"
+        />
+        <img
+          src="img/p3/screenshots/6.jpg"
+          alt="Screenshot de Persona 3"
+          onclick="abrir(this)"
+        />
+        <img
+          src="img/p3/screenshots/7.jpg"
+          alt="Screenshot de Persona 3"
+          onclick="abrir(this)"
+        />
+        <img
+          src="img/p3/screenshots/8.jpg"
+          alt="Screenshot de Persona 3"
+          onclick="abrir(this)"
+        />
+        <img
+          src="img/p3/screenshots/9.jpg"
+          alt="Screenshot de Persona 3"
+          onclick="abrir(this)"
+        />
+        <img
+          src="img/p3/boxart/p3.jpg"
+          alt="Screenshot de Persona 3"
+          onclick="abrir(this)"
+        />
+      </div>
+
+      <h1>Opening</h1>
+      <h2>Wake Up, Get Up, Get Out There</h2>
+      <div class="videoParent">
+        <div class="video">
+          <div class="video2">
+            <video controls poster="video/p5Poster.jpg">
+              <source src="/video/p5.mp4" type="video/mp4" />
+              <source src="/video/OG/p5.mkv" type="video/mkv" />
+              Tu navegador no puede reproducir el video
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <span
+        onclick="this.parentElement.style.display='none';   document.getElementsByTagName('html')[0].style = ' overflow-y: visible;';
+      "
+        class="closebtn"
+        >&times;</span
+      >
+
+      <img id="expandedImg" />
+      <div id="imgtext"></div>
+    </div>
+  </body>
 </html>
+
+<script>
+  function abrir(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+
+    document.getElementsByTagName("html")[0].style = " overflow-y: hidden;";
+  }
+</script>
