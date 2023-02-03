@@ -99,8 +99,9 @@ html{
   width: auto;
   height: auto;
   max-height: 30px;
-  filter: invert(100%);
-}
+
+
+  filter: invert(92%) sepia(14%) saturate(300%) hue-rotate(171deg) brightness(98%) contrast(93%);}
 
 .botonHome:hover {
   transition: 0.1s;
