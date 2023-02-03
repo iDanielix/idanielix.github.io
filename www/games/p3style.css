@@ -233,7 +233,7 @@ h2 {
 }
 
 #expandedImg {
-  height: 80%;
+  height: 70%;
   display: inline-block;
   transition: 0.2s;
   filter: drop-shadow(0 0 0.75rem black);
@@ -299,7 +299,7 @@ h2 {
 .texto .portada{
   width: 20%;
   float: left;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0px 0px 20px -10px;
   margin-right: 20px;
   transition: 0.5s ease;
@@ -329,7 +329,6 @@ padding-top: 50px;}
 
   float: left;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px -10px;
   margin-right: 20px;
   transition: 0.5s ease;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);

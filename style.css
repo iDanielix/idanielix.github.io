@@ -212,7 +212,7 @@ h2 {
 }
 
 #expandedImg {
-  height: 60%;
+  height: 70%;
   display: inline-block;
   transition: 0.2s;
   box-shadow: -1px 1px 20px 4px rgba(0, 0, 0, 0.126);
@@ -241,19 +241,25 @@ h2 {
 }
 
 /* menu de juegos con imagenes */
-.juegos img {
+.menuJ {
   width: 0px;
   flex-grow: 1;
   object-fit: cover;
   transition: .5s ease;
   opacity: 70%;
+  cursor:pointer
 }
-.juegos img:hover {
+.menuJ:hover{
  width: 4%;
  filter: saturate(150%);
  opacity: 100%;
 }
+.menu{
+  height: 350;
+  width: 100%;
+  object-fit: cover;
 
+}
 .juegos{
   width: 82%;
   height:350px;
