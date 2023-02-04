@@ -5,10 +5,12 @@
 /*    font-family: Nunito; */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 /* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;700&display=swap');
+/* font-family: 'Unbounded', cursive; */
 
 /* BODY  */
 *{
-  font-family: 'Open Sans', sans-serif; 
+  font-family: 'Unbounded', cursive;  scroll-behavior: smooth;
 }
 @keyframes load{
   0%{
@@ -170,7 +172,9 @@ html{
   border-radius: 5px 5px 0 0;
 }
 
-
+.subPagina{
+  float: right;
+}
 
 /* GALERIA */
 /* Para que la escala entre la img y img hover vaya bien el max width tiene que ser el mismo entre los dos  */
@@ -208,10 +212,12 @@ hr {
 h1 {
   color: #D5E7F2;
   font-size: 40pt;
+  font-weight: 400;
 }
 h2 {
   color: #D5E7F2  ;
   font-size: 20pt;
+  font-weight: 100;
   /* #8AB5BF */
 }
 
