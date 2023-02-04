@@ -1,0 +1,496 @@
+
+/* Fuente importada de google */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/*    font-family: Nunito; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;700&display=swap');
+/* font-family: 'Unbounded', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/*     font-family: 'Josefin Sans', sans-serif;
+
+ */
+
+
+/* BODY  */
+*{
+  scroll-behavior: smooth;
+}
+@keyframes load{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+body {
+  /* background: rgb(201,0,0);
+background: linear-gradient(139deg, rgba(201,0,0,1) 0%, rgba(130,1,1,1) 100%);  */
+background-image: url(../../img/p5/bg/bggblur.png);
+  margin: 0 auto;
+  width: 100%;
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.articulo {
+  padding-top: 2% ;
+  width: 90%;
+  clear: both;
+  text-align: justify;
+  margin: auto;
+  line-height: 20pt;
+  animation: load 0.7s ease;
+
+}
+
+
+.bg{
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 38vw;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+
+}
+.bg img{
+  height: 80vh;
+  opacity: 30%;
+  filter: invert();
+}
+
+/* HEADER */
+html{
+  overflow-x: hidden;
+}
+.encabezado {
+  background-color: #820101;
+  height: 50px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 0;
+  box-shadow: -1px 1px 20px 4px rgba(0, 0, 0, 0.126);
+  z-index: 2;
+}
+
+.botonEncabezado {
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 100px;
+  transition: 0.2s;
+  text-align: center;
+  color: #ffbaba;
+  display: block;
+}
+
+.botonHome {
+  float: left;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 50px;
+  transition: 0.2s;
+  text-align: center;
+  color: #ffbaba;
+  display: block;
+  justify-content: center;
+}
+.botonHome img {
+  padding-top: 9px;
+  width: auto;
+  height: auto;
+  max-height: 30px;
+  filter: invert(84%) sepia(8%) saturate(2067%) hue-rotate(309deg) brightness(95%) contrast(119%);
+}
+
+.botonHome:hover {
+  transition: 0.1s;
+  background-color: #a90000;
+  color: #ffbaba;
+}
+.botonHome:hover img {
+  filter: invert(100%);
+}
+
+.botonEncabezado:hover {
+  transition: 0.1s;
+  background-color: #a90000;
+  color: #ffffff;
+}
+
+.botonEncabezado:hover .desplegable {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s;
+}
+.desplegable:hover {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.2s;
+}
+
+.desplegable:hover a {
+  color:#ffffff;
+  transition: 0.1s;
+  font-size: 12pt;
+}
+
+.desplegable:hover {
+  background-color: #e40000;
+}
+.desplegable {
+  float: left;
+  clear: both;
+  text-align: left;
+  height: 30px;
+  width: 230px;
+  background-color: #bb0000;
+  display: block;
+  opacity: 0;
+  padding: 10px;
+  color: #ffbaba;
+  margin: 0 auto;
+  transition: 0.2s;
+  visibility: hidden;
+  text-decoration: none;
+}
+.desplegable a {
+  color: #ffbaba;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 11pt;
+}
+
+.desplegable:last-child {
+  border-radius: 0 0 5px 5px;
+}
+.uno {
+  border-radius: 5px 5px 0 0;
+}
+
+.subPagina{
+  float: right;
+}
+
+
+/* GALERIA */
+/* Para que la escala entre la img y img hover vaya bien el max width tiene que ser el mismo entre los dos  */
+.galeria img {
+  z-index: 1;
+  max-width: 300px;
+  object-fit: cover;  
+  width: 20%;
+  height: 22.5%;
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #4787c050;
+  box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.8);  transition: 0.2s;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.galeria img:hover {
+  max-width: 300px;
+  transition: 0.2s;
+  overflow: hidden; 
+  transform: scale(1.1);
+  filter: brightness(85%) ;
+
+}
+
+.galeria {
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+hr {
+  color: #ffbaba;
+}
+h1 {
+  color: #ffbaba;
+  font-size: 40pt;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+h2 {
+  color: #ffbaba  ;
+  font-size: 25pt;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+
+  /* #8AB5BF */
+}
+
+/* Visualizador de imagenes */
+.container {
+ 
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.616); /* Black w/ opacity */
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  text-align: center;
+
+}
+
+#expandedImg {
+  height: 70%;
+  display: inline-block;
+  transition: 0.2s;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+#expandedImg:hover {
+  filter: brightness(120%) drop-shadow(0 0 0.75rem black);
+  transition: 0.2s;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#imgtext {
+  padding-top: 20px;
+  text-align: center;
+  margin: auto;
+  line-height: 20pt;
+  color: white;
+}
+
+/* Reproductor de video */
+.video video{
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  border-radius: 20px;
+  word-spacing: 1vw;
+  box-shadow: 0px 0px 19px -5px rgba(0,0,0,0.8);  
+
+}
+.video{
+  width: 100%;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  padding: 2vh;
+}
+
+.video2{
+  width: 65%;
+}
+.video video{
+  width: 100%
+}
+
+.videoParent{
+  clear: both;
+}
+
+.videoParent h1{
+  padding-top: 50px;
+}
+
+/* pagina */
+.texto .portada{
+  width: 20%;
+  float: left;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px -10px;
+  margin-right: 20px;
+  transition: 0.5s ease;
+
+}
+.texto img:hover {
+  overflow: hidden; 
+  transform: scale(1.05);
+  filter: brightness(80%) ;
+
+} 
+.texto p{
+  color: white;
+
+}
+
+.texto .head{
+  font-size: 20pt;
+  padding-bottom: 0;
+}
+.texto .head2{
+  font-size: 17pt;
+}
+.texto{
+  clear: both;
+}
+
+
+/* INFO PERSONAJES */
+
+.spriteL{
+  width: 250px;
+  max-width: 60%;
+
+  float: left;
+  border-radius: 20px;
+  margin-right: 20px;
+  transition: 0.5s ease;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+
+}
+
+.spriteR{
+  padding-left: 15px;
+  width: 250px;
+  max-width: 60%;
+  margin-right: 20px;
+  transition: 0.5s ease;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+  float:right;
+}
+
+
+.charR{
+  float: right;
+  width: 50%;
+  clear: right;
+
+}
+.charR p{
+  text-align: right;
+  margin: 5px;
+}
+.charR h2{
+  text-align: right;
+  margin: 5px;
+}
+
+.charL{ 
+  float: left;
+  width: 50%;
+}
+.charL p{ 
+  margin: 5px;
+  text-align: left;
+
+}
+.charL h2{ 
+  margin: 5px;
+  text-align: left;
+
+}
+#ken{
+  width: 25%;
+}
+.char{
+  float: left;
+  clear: both;
+  padding: 3%;
+  background-color: #00000041;
+}
+
+
+.personajes img:hover {
+  overflow: hidden; 
+  transform: scale(1.05);
+  filter: brightness(80%) ;
+
+}
+.personajes p{
+  color: white;
+  
+}
+
+.personajes{
+  clear: both;
+padding-top: 50px;}
+
+
+.char:first-of-type{
+  border-radius: 20px 20px 0 0 ;
+}
+.char:last-of-type{
+  border-radius: 0 0 20px 20px;
+}
+
+
+/* DIVS DE INFO SOBRE JUEGOS */
+
+.juegoParent, .spinoffParent{
+  width: 100%;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  border-radius: 20px 20px 0 0;
+  background-color: #5e16168f;
+}
+
+.juego{
+  display: flex;  
+  justify-content: center;  
+  text-align: center;
+  float: left;
+  width: 50%;
+}
+.infoJuegos{ 
+  padding-top: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  width: 50%;
+  color: white;
+}
+
+.juego img{
+  padding-top: 40px;
+  padding-bottom: 15px;
+  width: 50%;
+  transition: 0.3s ease;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.474));
+}
+.juego img:hover{
+  transform: scale(1.03);
+}
+.juegoParent2, .spinoffParent2{
+  width: 100%;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  background-color: #5e16168f;
+  
+}
+
+.juegoParent3, .spinoffParent3{
+  width: 100%;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  border-radius:  0 0 20px 20px;
+  background-color: #5e16168f;
+  padding-bottom: 20px;
+}
+
+.spinoffParent2, .spinoffParent, .spinoffParent3{
+  background-color: #0000008f;
+}
+
