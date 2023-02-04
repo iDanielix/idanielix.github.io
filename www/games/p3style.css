@@ -10,7 +10,7 @@
 
 /* BODY  */
 *{
-  font-family: 'Unbounded', cursive;  scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 @keyframes load{
   0%{
@@ -27,13 +27,14 @@ body {
   margin: 0 auto;
   width: 100%;
   background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 .articulo {
   padding-top: 2% ;
   width: 90%;
   clear: both;
-  font-family: Nunito;
   text-align: justify;
   margin: auto;
   line-height: 20pt;
@@ -60,7 +61,6 @@ body {
 /* HEADER */
 html{
   overflow-x: hidden;
-  font-family: Nunito;
 }
 .encabezado {
   background-color: #303E8C;
@@ -81,7 +81,6 @@ html{
   width: 100px;
   transition: 0.2s;
   text-align: center;
-  font-family: Nunito;
   color: #D5E7F2;
   display: block;
 }
@@ -94,7 +93,6 @@ html{
   width: 50px;
   transition: 0.2s;
   text-align: center;
-  font-family: Nunito;
   color: #ffff;
   display: block;
   justify-content: center;
@@ -213,11 +211,13 @@ h1 {
   color: #D5E7F2;
   font-size: 40pt;
   font-weight: 400;
+  font-family: 'Unbounded', cursive; 
 }
 h2 {
   color: #D5E7F2  ;
   font-size: 20pt;
   font-weight: 100;
+  font-family: 'Unbounded', cursive; 
   /* #8AB5BF */
 }
 
@@ -263,7 +263,6 @@ h2 {
 
 #imgtext {
   padding-top: 20px;
-  font-family: Nunito;
   text-align: center;
   margin: auto;
   line-height: 20pt;
