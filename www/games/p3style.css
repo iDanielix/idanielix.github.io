@@ -307,12 +307,12 @@ h2 {
   transition: 0.5s ease;
 
 }
-/* .texto img:hover {
+.texto img:hover {
   overflow: hidden; 
   transform: scale(1.05);
   filter: brightness(80%) ;
 
-} */
+} 
 .texto p{
   color: white;
   
@@ -480,3 +480,4 @@ padding-top: 50px;}
 .spinoffParent2, .spinoffParent, .spinoffParent3{
   background-color: #0000008f;
 }
+
