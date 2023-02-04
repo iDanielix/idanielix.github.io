@@ -7,6 +7,11 @@
 /* font-family: 'Open Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;700&display=swap');
 /* font-family: 'Unbounded', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/*     font-family: 'Josefin Sans', sans-serif;
+
+ */
+
 
 /* BODY  */
 *{
@@ -174,6 +179,7 @@ html{
   float: right;
 }
 
+
 /* GALERIA */
 /* Para que la escala entre la img y img hover vaya bien el max width tiene que ser el mismo entre los dos  */
 .galeria img {
@@ -211,13 +217,15 @@ h1 {
   color: #D5E7F2;
   font-size: 40pt;
   font-weight: 400;
-  font-family: 'Unbounded', cursive; 
+  font-family: 'Josefin Sans', sans-serif;
+
 }
 h2 {
   color: #D5E7F2  ;
-  font-size: 20pt;
-  font-weight: 100;
-  font-family: 'Unbounded', cursive; 
+  font-size: 25pt;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+
   /* #8AB5BF */
 }
 
@@ -320,15 +328,18 @@ h2 {
 } 
 .texto p{
   color: white;
-  
+
 }
 
 .texto .head{
   font-size: 20pt;
+  padding-bottom: 0;
+}
+.texto .head2{
+  font-size: 17pt;
 }
 .texto{
   clear: both;
-padding-top: 50px;
 }
 
 
@@ -394,11 +405,6 @@ padding-top: 50px;
   clear: both;
   padding: 3%;
   background-color: #00000041;
-}
-
-
-.personajes h1{
-  padding-bottom: 30px;
 }
 
 
