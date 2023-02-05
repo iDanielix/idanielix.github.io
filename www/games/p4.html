@@ -1,15 +1,17 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Inicio</title>
-    <link rel="stylesheet" href="./p5.css" />
+    <title>Persona 4</title>
+    <link rel="stylesheet" href="./p4.css" />
     <link rel="icon" type="image/x-icon" href="../../icons/favicon.ico" />
   </head>
   <body>
     <!-- Encabezado y Botones desplegabes -->
     <div class="encabezado">
       <div title="Inicio" class="botonHome">
-        <a href="/index.html"> <img src="../../icons/homeb.png" alt="" /> </a>
+        <a href="../../index.html">
+          <img src="../../icons/homeb.png" alt="" />
+        </a>
       </div>
 
       <div class="botonEncabezado">
@@ -29,7 +31,7 @@
           <a href="/p/persona2EP.html"> Persona 2 Eternal Punishment</a>
         </div>
         <div class="desplegable"><a href="./p3.html"> Persona 3</a></div>
-        <div class="desplegable"><a href="./p4.html"> Persona 4</a></div>
+        <div class="desplegable"><a href="/p/persona4.html"> Persona 4</a></div>
         <div class="desplegable"><a href="./p5.html"> Persona 5</a></div>
       </div>
 
@@ -70,7 +72,7 @@
       <div class="texto">
         <img
           class="portada"
-          src="../../img/p5/boxart/p5Clear.png"
+          src="../../img/p4/boxart/p4.jpg"
           alt="Caratula de la version original de Persona 3"
           onclick="abrir(this)"
         />
@@ -104,7 +106,7 @@
           <div class="charL">
             <img
               class="spriteL"
-              src="../../img/p5/sprites/P5OA_Protagonist_Normal.webp"
+              src="../../img/p4/sprites/yu.png"
               alt="Sprite del Protagonista"
               onclick="abrir(this)"
               id="makoto"
@@ -123,7 +125,7 @@
           <div class="charR">
             <img
               class="spriteR"
-              src="../../img/p5/sprites/P5_portrait_of_Morgana.webp"
+              src="../../img/p4/sprites/teddie.png"
               alt="Sprite de Yukari"
               onclick="abrir(this)"
             />
@@ -145,7 +147,7 @@
           <div class="charL">
             <img
               class="spriteL"
-              src="../../img/p5/sprites/P5R_Portrait_Ryuji_Grinning.webp"
+              src="../../img/p4/sprites/yosuke.png"
               alt="Sprite de Junpei"
               onclick="abrir(this)"
             />
@@ -165,7 +167,7 @@
           <div class="charR">
             <img
               class="spriteR"
-              src="../../img/p5/sprites/P5R_Portrait_Ann.webp"
+              src="../../img/p4/sprites/chie.png"
               alt="Sprite de Mitsuru"
               onclick="abrir(this)"
             />
@@ -188,7 +190,7 @@
           <div class="charL">
             <img
               class="spriteL"
-              src="../../img/p5/sprites/P5R_Portrait_Yusuke.webp"
+              src="../../img/p4/sprites/yukiko.png"
               alt="Sprite de akihiko"
               onclick="abrir(this)"
             />
@@ -207,9 +209,8 @@
           </div>
           <div class="charR">
             <img
-              id="ken"
               class="spriteR"
-              src="../../img/p5/sprites/P5R_Portrait_Makoto.webp"
+              src="../../img/p4/sprites/kanji.png"
               alt="Sprite de Ken"
               onclick="abrir(this)"
             />
@@ -230,7 +231,7 @@
           <div class="charL">
             <img
               class="spriteL"
-              src="../../img/p5/sprites/P5R_Portrait_Futaba_Smiling.webp"
+              src="../../img/p4/sprites/naoto.png"
               alt="Sprite de Shinjiro"
               onclick="abrir(this)"
             />
@@ -248,7 +249,7 @@
           <div class="charR">
             <img
               class="spriteR"
-              src="../../img/p5/sprites/P5_portrait_of_Haru_Okumura.webp"
+              src="../../img/p4/sprites/rise.png"
               alt="Sprite de Koromaru"
               onclick="abrir(this)"
             />
@@ -264,37 +265,15 @@
             </p>
           </div>
         </div>
-        <div class="char">
-          <div class="charL">
-            <img
-              class="spriteL"
-              src="../../img/p5/sprites/P5R_Portrait_Akechi.webp"
-              alt="Sprite de Aigis"
-              onclick="abrir(this)"
-            />
-            <h2>Aigis</h2>
-            <p>
-              <b> Arcana(s)</b>: Chariot, Aeon, Fool <br />
-              <b>Persona inicial</b>: Palladion<br />
-              <b>Persona definitiva</b>: Athena<br />
-              <b>Elemento principal</b>: Ataques fisicos<br />
-              <br />
-              Aegis es una androide creada por el Grupo Kirijo, y es el ultimo
-              modelo funcional de su arma experimental anti-Sombras. En combate
-              utiliza armas de alta tecnologia, como ametralladoras, cohetes o
-              pistolas de alto rango.
-            </p>
-          </div>
-        </div>
       </div>
       <div class="videoParent">
         <br id="Opening" />
         <h1>Opening</h1>
-        <h2>Wake Up, Get Up, Get Out There</h2>
+        <h2>Pursuing My True Self</h2>
         <div class="video">
           <div class="video2">
-            <video controls poster="../../video/p5Poster.jpg">
-              <source src="../../video/p5.mp4" type="video/mp4" />
+            <video controls poster="../../video/p4Poster.webp">
+              <source src="../../video/p4.mp4" type="video/mp4" />
               Tu navegador no puede reproducir el video
             </video>
           </div>
@@ -307,14 +286,14 @@
       <div class="juegoParent">
         <div class="juego">
           <img
-            src="../../img/p5/boxart/p5Clear.png"
+            src="../../img/p4/boxart/p4.jpg"
             alt="Boxart de Persona 3"
             onclick="abrir(this)"
           />
         </div>
         <div class="juego">
           <img
-            src="../../img/p5/boxart/p5r.png"
+            src="../../img/p4/boxart/p4g.jpg"
             alt="Boxart de Persona 3 FES"
             onclick="abrir(this)"
           />
@@ -322,10 +301,10 @@
       </div>
       <div class="juegoParent2">
         <div class="infoJuegos">
-          <h2>Persona 5 (PS3/PS4)</h2>
+          <h2>Persona 3 (PS2)</h2>
         </div>
         <div class="infoJuegos">
-          <h2>Persona 5 Royale</h2>
+          <h2>Persona 3 FES (PS2)</h2>
         </div>
       </div>
       <div class="juegoParent3">
@@ -348,21 +327,21 @@
       <div class="spinoffParent">
         <div class="juego">
           <img
-            src="../../img/p5/boxart/p5s.png"
+            src="../../img/p4/boxart/p4a.png"
             alt="Boxart de PQ"
             onclick="abrir(this)"
           />
         </div>
         <div class="juego">
           <img
-            src="../../img/p5/boxart/p5d.png"
+            src="../../img/p4/boxart/p4au.jpg"
             alt="Boxart de PQ2"
             onclick="abrir(this)"
           />
         </div>
         <div class="juego">
           <img
-            src="../../img/p5/boxart/pq2.png"
+            src="../../img/p4/boxart/p4d.png"
             alt="Boxart de P3D"
             onclick="abrir(this)"
           />
@@ -379,7 +358,7 @@
           <h2>Persona 3: Dancing In Moonlight (PS4/PSVITA)</h2>
         </div>
       </div>
-      <div class="spinoffParent3">
+      <div class="spinoffParent3" id="joinDIv">
         <div class="infoJuegos">
           <p>
             RPG para la Nintendo 3DS que junta los personajes de
@@ -401,114 +380,154 @@
           </p>
         </div>
       </div>
+      <div class="spinoffParent" id="joinDIv">
+        <div class="juego">
+          <img
+            src="../../img/p4/boxart/pq.png"
+            alt="Boxart de PQ"
+            onclick="abrir(this)"
+          />
+        </div>
+        <div class="juego">
+          <img
+            src="../../img/p4/boxart/pq2.png"
+            alt="Boxart de PQ2"
+            onclick="abrir(this)"
+          />
+        </div>
+      </div>
+      <div class="spinoffParent2">
+        <div class="infoJuegos">
+          <h2>Persona Q (3DS)</h2>
+        </div>
+        <div class="infoJuegos">
+          <h2>Persona Q2 (3DS)</h2>
+        </div>
+      </div>
+      <div class="spinoffParent3">
+        <div class="infoJuegos">
+          <p>
+            RPG para la Nintendo 3DS que junta los personajes de
+            <i>Persona 3</i> y <i>Persona 4</i>. Es un juego con gameplay muy
+            similar a <i>Etrian Oddyssey</i>, otra saga publicadada por ATLUS.
+          </p>
+        </div>
+        <div class="infoJuegos">
+          <p>
+            Secuela del <i>Persona Q</i> original, que esta vez incluye a los
+            personajes de <i>Persona 5</i>. Fue uno de los ultimos juegos que se
+            publicaron para la 3DS
+          </p>
+        </div>
+      </div>
       <br id="Galeria" />
       <h1>Galeria</h1>
       <hr />
       <h2>Capturas de pantalla de Persona 3</h2>
       <div class="galeria">
         <img
-          src="../../img/p5/screenshots/1.jpg"
+          src="../../img/p4/screenshots/1.jpg"
           alt="Screenshot de dialogo de Persona 3"
           onclick="abrir(this)"
         />
 
         <img
-          src="../../img/p5/screenshots/2.jpg"
+          src="../../img/p4/screenshots/2.jpg"
           alt="Screenshot de dialogo de Persona 3"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/screenshots/3.jpg"
+          src="../../img/p4/screenshots/3.jpg"
           alt="Screenshot de dialogo de Persona 3"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/screenshots/4.jpg"
+          src="../../img/p4/screenshots/4.jpg"
           alt="Screenshot de Persona 3"
           onclick="abrir(this)"
         />
 
         <img
-          src="../../img/p5/screenshots/5.jpg"
+          src="../../img/p4/screenshots/5.jpg"
           alt="Screenshot de Persona 3"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/screenshots/6.jpg"
+          src="../../img/p4/screenshots/6.jpg"
           alt="Screenshot de Persona 3"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/screenshots/7.jpg"
+          src="../../img/p4/screenshots/7.jpg"
           alt="Screenshot de Persona 3"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/screenshots/8.jpg"
+          src="../../img/p4/screenshots/8.jpg"
           alt="Screenshot de Persona 3"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/screenshots/9.jpg"
+          src="../../img/p4/screenshots/9.jpg"
           alt="Screenshot de Persona 3"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/screenshots/10.webp"
+          src="../../img/p4/screenshots/10.jpg"
           alt="Screenshot de Persona 3"
           onclick="abrir(this)"
         />
       </div>
       <hr />
-      <h2>Fotogramas de la serie</h2>
+      <h2>Fotogramas de las peliculas</h2>
       <div class="galeria">
         <img
-          src="../../img/p5/anime/1.jpg"
+          src="../../img/p4/anime/1.jpg"
           alt="Fotograma de las pelicula"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/anime/2.jpg"
+          src="../../img/p4/anime/2.jpg"
           alt="Fotograma de las pelicula"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/anime/3.jpg"
+          src="../../img/p4/anime/3.jpg"
           alt="Fotograma de las pelicula"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/anime/4.jpg"
+          src="../../img/p4/anime/4.jpg"
           alt="Fotograma de las pelicula"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/anime/5.jpg"
+          src="../../img/p4/anime/5.jpg"
           alt="Fotograma de las pelicula"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/anime/6.jpg"
+          src="../../img/p4/anime/6.jpg"
           alt="Fotograma de las pelicula"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/anime/7.jpg"
+          src="../../img/p4/anime/7.png"
           alt="Fotograma de las pelicula"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/anime/8.jpg"
+          src="../../img/p4/anime/8.jpg"
           alt="Fotograma de las pelicula"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/anime/9.jpg"
+          src="../../img/p4/anime/9.jpg"
           alt="Fotograma de las pelicula"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/anime/10.jpg"
+          src="../../img/p4/anime/10.jpg"
           alt="Fotograma de las pelicula"
           onclick="abrir(this)"
         />
@@ -517,53 +536,53 @@
       <h2>Arte e ilustraciones</h2>
       <div class="galeria">
         <img
-          src="../../img/p5/artwork/Illustration_of_the_Protagonist_and_Morgana_for_Playstation_Awards_2016.webp"
+          src="../../img/p4/artwork/2020_p4golden_for_pc_artwork.webp"
           alt="Ilustracion de Aigis"
           onclick="abrir(this)"
         />
         <img
-          src="../../img/p5/artwork/Illustration_of_the_Protagonst,_Ryuji,_and_Anne.webp"
+          src="../../img/p4/artwork/InvestigationArt.webp"
           alt="Ilustracion de Aigis"
           onclick="abrir(this)"
         />
         <img
-        src="../../img/p5/artwork/P5_Illustration_of_the_Protagonist_and_Goro_by_Rokuro_Saito.webp"
-        alt="Fondo de pantalla/Ilustracion para celebrar el 25º aniversario de la saga"
+          src="../../img/p4/artwork/P4-Naoto&Yukiko.webp"
+          alt="Fondo de pantalla/Ilustracion para celebrar el 25º aniversario de la saga"
           onclick="abrir(this)"
         />
         <img
-        src="../../img/p5/artwork/PERSONA5_20th_Anniversary_package_visual_of_the_Phantom_Thieves_of_Hearts.webp"
-        alt="Boceto del diseño inicial del progagonista"
+          src="../../img/p4/artwork/Persona_4_Chie.webp"
+          alt="Boceto del diseño inicial del progagonista"
           onclick="abrir(this)"
         />
         <img
-        src="../../img/p5/artwork/Persona_5_Official_Design_Work_key_visual_by_Shigenori_Soejima.webp"
-        alt="Ilustracion de Tartarus"
+          src="../../img/p4/artwork/Persona_4_investigation_team_2.webp"
+          alt="Ilustracion de Tartarus"
           onclick="abrir(this)"
         />
         <img
-        src="../../img/p5/artwork/Protag_reach.webp"
-        alt="Ilustracion del Protagonista junto a Junpei, Yukari, y Thanatos"
+          src="../../img/p4/artwork/Persona_4_investigation_team_4.webp"
+          alt="Ilustracion del Protagonista junto a Junpei, Yukari, y Thanatos"
           onclick="abrir(this)"
         />
         <img
-        src="../../img/p5/artwork/Soejima-Persona-5.webp"
-        alt="Ilustracion del Protagonista"
+          src="../../img/p4/artwork/Persona_4_investigation_team_9.webp"
+          alt="Ilustracion del Protagonista"
           onclick="abrir(this)"
         />
         <img
-        src="../../img/p5/artwork/StartTheGame.webp"
-        alt="Ilustracion de los dos Protagonistas"
+          src="../../img/p4/artwork/Persona_4_Protagonist_2.webp"
+          alt="Ilustracion de los dos Protagonistas"
           onclick="abrir(this)"
         />
         <img
-        src="../../img/p5/artwork/3.2_Million_Unit_Sales_P5.webp"
-        alt="Ilustracion de los miembros de SEES y sus personas"
+          src="../../img/p4/artwork/ProtagNaoto1.webp"
+          alt="Ilustracion de los miembros de SEES y sus personas"
           onclick="abrir(this)"
         />
         <img
-        src="../../img/p5/artwork/ThievesLeft.webp"
-        alt="ilustracion de todos los miembros de S.E.E.S"
+          src="../../img/p4/artwork/YuAndTed.webp"
+          alt="ilustracion de todos los miembros de S.E.E.S"
           onclick="abrir(this)"
         />
       </div>
@@ -580,9 +599,12 @@
       <img id="expandedImg" />
       <div id="imgtext"></div>
     </div>
-    <!-- <div class="bg">
-      <img src="../..//img/p5/bg/bgN2.png" alt="" />
-    </div> -->
+    <div class="bg">
+      <img src="../..//img/p4/bg/p2.png" alt="" />
+    </div>
+    <div class="bg2">
+      <img src="../..//img/p4/bg/p1b.png" alt="" />
+    </div>
   </body>
 </html>
 
