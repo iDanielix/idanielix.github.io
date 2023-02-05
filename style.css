@@ -7,6 +7,10 @@
 /* font-family: 'Open Sans', sans-serif; */
 
 /* HEADER */
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
 html{
   overflow-x: hidden;
   font-family: Nunito;

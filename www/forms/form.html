@@ -1,17 +1,19 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Inicio</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="../../style.css" />
-    <link rel="icon" type="image/x-icon" href="../../icons/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../icons/favicon.ico" />
   </head>
   <body class="formB">
     <!-- Encabezado y Botones desplegabes -->
     <div class="encabezado">
       <div class="botonHome">
-        <a href="../../index.html"> <img src="../../icons/homeb.png" alt="" /> </a>
+        <a href="../../index.html">
+          <img src="../../icons/homeb.png" alt="" />
+        </a>
       </div>
-    
+
       <div class="botonEncabezado">
         <p>Atlus</p>
       </div>
@@ -19,17 +21,23 @@
       <div class="botonEncabezado">
         <p>Juegos</p>
         <div class="desplegable uno">
-          <a href="/p/persona1.html"> Persona</a>
+          <a href="/www/games/p1.html"> Persona</a>
         </div>
         <div class="desplegable">
-          <a href="/p/persona2IS.html"> Persona 2 Innocent Sin</a>
+          <a href="/www/games/p2IS.html"> Persona 2 Innocent Sin</a>
         </div>
         <div class="desplegable">
-          <a href="/p/persona2EP.html"> Persona 2 Eternal Punishment</a>
+          <a href="/www/games/p2EP.html"> Persona 2 Eternal Punishment</a>
         </div>
-        <div class="desplegable"><a href="/games/p3.html"> Persona 3</a></div>
-        <div class="desplegable"><a href="/p/persona4.html"> Persona 4</a></div>
-        <div class="desplegable"><a href="/p/persona5.html"> Persona 5</a></div>
+        <div class="desplegable">
+          <a href="/www/games/p3.html"> Persona 3</a>
+        </div>
+        <div class="desplegable">
+          <a href="/www/games/p4.html"> Persona 4</a>
+        </div>
+        <div class="desplegable">
+          <a href="/www/games/p5.html"> Persona 5</a>
+        </div>
       </div>
       <div class="botonEncabezado">
         <p>Tienda</p>
@@ -51,66 +59,76 @@
     </div>
 
     <div class="articulo">
-      <h1 style="font-size:30pt;">Formulario de Soporte</h1><p>
-        Introduzca sus datos en los siguientes campos para contactarnos
-      </p>
+      <h1 style="font-size: 30pt">Formulario de Soporte</h1>
+      <p>Introduzca sus datos en los siguientes campos para contactarnos</p>
       <div class="soporteParent">
         <div class="soporte">
           <form action="./formError.html">
             <label for="nombre">Nombre</label>
-            <br>
-            <input id="nombre" placeholder="Raul"type="text">
-            <br>
+            <br />
+            <input id="nombre" placeholder="Raul" type="text" />
+            <br />
             <label for="apellidos">Apellidos</label>
-            <br>
-            <input id="apellidos" placeholder="Lopez"type="text">
-            <br>
+            <br />
+            <input id="apellidos" placeholder="Lopez" type="text" />
+            <br />
             <label for="email">Email</label>
-            <br>
-            <input id="email" placeholder="ejemplo123@gmail.com"type="text">
-            <br>
+            <br />
+            <input id="email" placeholder="ejemplo123@gmail.com" type="text" />
+            <br />
             <label for="tlf">Numero de telefono</label>
-            <br>
-            <input id="tlf" placeholder="684 16 94 20"type="text">
-            <br>
+            <br />
+            <input id="tlf" placeholder="684 16 94 20" type="text" />
+            <br />
             <label for="sex">Sexo</label>
-            <br>
+            <br />
             <div class="sex">
-              <input type="radio" name="sex" value="Hombre"> Hombre
-              <input type="radio" name="sex" value="Mujer"> Mujer
-              <input type="radio" name="sex" value="Otro"> Otro 
-              <input type="radio" name="sex" value="etc"> Prefiero no decirlo 
+              <input type="radio" name="sex" value="Hombre" /> Hombre
+              <input type="radio" name="sex" value="Mujer" /> Mujer
+              <input type="radio" name="sex" value="Otro" /> Otro
+              <input type="radio" name="sex" value="etc" /> Prefiero no decirlo
             </div>
-            <br>
+            <br />
             <label for="region">Region</label>
-            <br>
-            <select  id="region" name="region">
-              <option style="font-family: Arial;" value="" disabled selected>Selecciona tu region</option>
-              <option style="font-family: Arial;" value="Europa">Europa</option>
-              <option style="font-family: Arial;" value="Asia">Asia</option>
-              <option style="font-family: Arial;" value="Oceania">Oceania</option>
-              <option style="font-family: Arial;" value="Africa">Africa</option>
-              <option style="font-family: Arial;" value="America del Norte">America del Norte</option>
-              <option style="font-family: Arial;" value="America del Sur">America del Sur</option>
+            <br />
+            <select id="region" name="region">
+              <option style="font-family: Arial" value="" disabled selected>
+                Selecciona tu region
+              </option>
+              <option style="font-family: Arial" value="Europa">Europa</option>
+              <option style="font-family: Arial" value="Asia">Asia</option>
+              <option style="font-family: Arial" value="Oceania">
+                Oceania
+              </option>
+              <option style="font-family: Arial" value="Africa">Africa</option>
+              <option style="font-family: Arial" value="America del Norte">
+                America del Norte
+              </option>
+              <option style="font-family: Arial" value="America del Sur">
+                America del Sur
+              </option>
             </select>
-            <br>
+            <br />
             <label for="asunto">Asunto</label>
-            <br>
-            <input id="asunto" placeholder=""type="text">
-            <br>
+            <br />
+            <input id="asunto" placeholder="" type="text" />
+            <br />
             <label for="mensaje">Mensaje</label>
-            <br>
-            <textarea id="subject" name="mensaje" placeholder="" style="height:200px;  resize: none;"></textarea>
-            <br>
-            <input type="submit" value="Enviar">
+            <br />
+            <textarea
+              id="subject"
+              name="mensaje"
+              placeholder=""
+              style="height: 200px; resize: none"
+            ></textarea>
+            <br />
+            <input type="submit" value="Enviar" />
           </form>
         </div>
       </div>
     </div>
     <div class="bg">
-      <img src="../../img/jackFrostBg.png" alt="">
+      <img src="../../img/jackFrostBg.png" alt="" />
     </div>
   </body>
 </html>
-
-
