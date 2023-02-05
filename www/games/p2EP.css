@@ -52,15 +52,13 @@ background: linear-gradient(5deg, rgba(72,52,53,1) 0%, rgba(175,144,140,1) 100%)
   width: 100%;
   position: fixed;
   bottom: 0px;
-  left: 38vw;
   align-items: center;
   text-align: center;
   z-index: -1;
 
 }
 .bg img{
-  height: 60vh;
-  opacity: 20%;
+  opacity: 10%;
 }
 
 /* HEADER */
