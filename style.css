@@ -598,3 +598,73 @@ input[type=submit]:hover {
     visibility: hidden;
   }
 }
+
+
+/* INFO JUEGOs */
+
+.juegoParent, .spinoffParent{
+  width: 100%;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  border-radius: 20px 20px 0 0;
+  background-color: #25171733;
+}
+
+.juego{
+  display: flex;  
+  justify-content: center;  
+  text-align: center;
+  float: left;
+  width: 33%;
+}
+.infoJuegos{ 
+  padding-top: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  width: 33%;
+  color: white;
+}
+.infoJuegos h2{
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #3022fa  ;
+
+}
+
+.juego img{
+  padding-top: 40px;
+  padding-bottom: 15px;
+  width: 50%;
+  transition: 0.3s ease;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.474));
+}
+.juego img:hover{
+  transform: scale(1.03);
+}
+.juegoParent2, .spinoffParent2{
+  width: 100%;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  background-color: #25171733;
+  
+}
+
+.juegoParent3, .spinoffParent3{
+  width: 100%;
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  border-radius:  0 0 20px 20px;
+  background-color: #25171733;
+  padding-bottom: 20px;
+}
+
+.spinoffParent2, .spinoffParent, .spinoffParent3{
+  background-color: #0000008f;
+}
+
+#joinDIv{
+  border-radius: 0 0 0 0;
+}
