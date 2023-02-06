@@ -453,6 +453,7 @@ input[type=submit]:hover {
   height:100%;
   z-index: 100;
 }
+
 /* Formulario easter egg */
 .rotate {
   animation: spin 70s infinite linear;
