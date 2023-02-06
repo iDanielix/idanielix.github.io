@@ -1,0 +1,139 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ATLUS</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="../icons/favicon.ico" />
+  </head>
+  <body>
+    <!-- Encabezado y Botones desplegabes -->
+    <div class="encabezado">
+      <div class="botonHome">
+        <a href="../index.html"> <img src="../icons/homeb.png" alt="" /> </a>
+      </div>
+
+      <a href="./atlus.html">
+        <div class="botonEncabezado">
+          <p>Atlus</p>
+        </div>
+      </a>
+
+      <!-- Desplegable juegos -->
+      <div class="botonEncabezado">
+        <p>Juegos</p>
+        <div class="desplegable uno">
+          <a href="./games/p1.html"> Persona</a>
+        </div>
+        <div class="desplegable">
+          <a href="./games/p2IS.html"> Persona 2 Innocent Sin</a>
+        </div>
+        <div class="desplegable">
+          <a href="./games/p2EP.html"> Persona 2 Eternal Punishment</a>
+        </div>
+        <div class="desplegable">
+          <a href="./games/p3.html"> Persona 3</a>
+        </div>
+        <div class="desplegable">
+          <a href="./games/p4.html"> Persona 4</a>
+        </div>
+        <div class="desplegable">
+          <a href="./games/p5.html"> Persona 5</a>
+        </div>
+      </div>
+
+      <!-- Desplegable Tienda -->
+      <div class="botonEncabezado">
+        <p>Tienda</p>
+        <div class="desplegable uno">
+          <a href="https://atlusshop.myshopify.com/">Shop Atlus</a>
+        </div>
+        <div class="desplegable">
+          <a href="https://persona.atlus.com/series/">Portal de SEGA</a>
+        </div>
+        <div class="desplegable">
+          <a href="https://store.steampowered.com/developer/ATLUS">Steam</a>
+        </div>
+      </div>
+
+      <a href="./forms/form.html">
+        <div class="botonEncabezado">
+          <p>Contacto</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="articulo">
+      <p style="font-size: 20pt">
+        <img id="atlOgo" src="../img/Atlus_logo_(2014).svg" alt="" /><span
+          style="font-weight: bold"
+          >ATLUS</span
+        >
+        es una desarrolladora de videojuegos japonesa ubicada en Tokio, filial
+        de SEGA. Son globalmente conocidos por desarrollar
+        <b>Shin Megami Tensei, Persona, Etrian Odyssey</b>
+        entre otros.
+      </p>
+      <p style="font-size: 15pt; clear: both;">
+        <br>
+        <h1>Mascota</h1>
+        <img id="jack" src="../img/Atlus_Jack_Frost.png" alt="Jack Frost" /><span
+        style="font-weight: bold"
+        >ATLUS</span
+      >
+        Atlus como mascota utiliza a Jack Frost desde su creacion en los años 90, un demonio de <i>Shin Megami Tensei</i>.
+        Se parece a un hombre de nieve, tiene dientes, una cola y no tiene nariz.
+        Aparece en casi todos los juegos de la saga, y tambien es un personaje recurrente
+        en <i>Persona</i>. Su frase caracteristica es "Hee-Ho", y desde <i>Shin Megami Tensei II</i>
+        tiene una familia que incluye a 
+        King Frost, Pyro Jack (o Jack-O Lantern en algunas traducciones) Frost 5 Senshi, y Black Frost. 
+        Tambien llego a tener un juego para la Virtual Boy de Nintendo en la que el era el protagonista junto a Pyro Jack.
+      </p>
+      <p style="font-size: 17pt; clear: both;">
+        <br />
+        <h1>Historia de la compañia</h1>
+        La compañia fue fundada en abril de 1986, y existio hasta que la
+        compañia se disolvio en 2010 por Index Holdings. Tras la disolución, el
+        nombre Atlus continuó siendo usado por Index Corporation para publicar
+        videojuegos hasta 2013. Atlus, en la actualidad, fue fundada como Sega
+        Dream Corporation en septiembre de 2013, una nueva corporación
+        establecida por SEGA. En noviembre de 2013, Sega Dream fue renombrado a
+        Index Corporation, siguiendo la bancarrota de la Index Corporation
+        original. En abril de 2014, Sega implementó a la empresa soluciones
+        financieras para luego ser renombrado como Atlus.
+      </p>
+      <p style="font-size: 15pt">
+        <br />
+
+        <h1>Departamentos</h1>
+        Atlus tiene 3 divisiones de desarrollo, Creative Department 1st
+        Production (Team Maniax), Creative Department 2nd Production (P-Studio),
+        y Creative Department 3rd Production (Studio Zero).
+      </p>
+      
+    </div>
+
+    <div class="container">
+      <span
+        onclick="this.parentElement.style.display='none';   document.getElementsByTagName('html')[0].style = ' overflow-y: visible;';
+      "
+        class="closebtn"
+        >&times;</span
+      >
+
+      <img id="expandedImg" />
+      <div id="imgtext"></div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function abrir(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+
+    document.getElementsByTagName("html")[0].style = " overflow-y: hidden;";
+  }
+</script>

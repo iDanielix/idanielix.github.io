@@ -138,9 +138,12 @@ html{
 }
 
 body {
-  background-color: #7c8cad;
+  background: rgb(164,179,255);
+  background: linear-gradient(0deg, rgba(164,179,255,1) 0%, rgba(255,255,255,1) 100%);  
   margin: 0 auto;
+  background-repeat: no-repeat;
   width: 100%;
+  background-attachment: fixed;
 }
 
 .articulo {
@@ -154,7 +157,19 @@ body {
   animation: load 0.7s ease;
 
 }
+#atlOgo{
+  width: 30%;
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
 
+#jack{
+  width: 20%;
+  float: right;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
 /* GALERIA */
 /* Para que la escala entre la img y img hover vaya bien el max width tiene que ser el mismo entre los dos  */
 .galeria img {
@@ -357,7 +372,7 @@ h2 {
   align-items: center;
   text-align: left;
   background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(198, 198, 198, 0.545) 0%, rgba(58, 58, 58, 0.468) 100%);   display: inline-block;
+  background: linear-gradient(0deg, rgba(255,255,255,0.7091970577293417) 0%, rgba(203,203,203,0.6447712874212185) 100%);    display: inline-block;
   padding: 25px;
   border-radius: 20px;
   box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.8);  
@@ -414,15 +429,15 @@ input[type=submit]:hover {
   width: 100%;
   position: fixed;
   bottom: 50px;
-  left: 38vw;
+  left: 36.5vw;
   align-items: center;
   text-align: center;
   z-index: -1;
 
 }
 .bg img{
-  height: 60vh;
-  opacity: 20%;
+  height: 80vh;
+  opacity: 50%;
 }
 
 .formB{
