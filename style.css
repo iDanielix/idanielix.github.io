@@ -369,16 +369,23 @@ h2 {
 }
 
 /* Formulario */
+
+form div{
+  padding-right: 20px;
+  box-sizing: border-box;
+}
 .soporte{
-  width: 45%;
+  width: 40%;
   align-items: center;
   text-align: left;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,0.7091970577293417) 0%, rgba(203,203,203,0.6447712874212185) 100%);    display: inline-block;
+  background: rgb(148,160,189);
+  background: linear-gradient(10deg, rgba(148,160,189,1) 0%, rgba(93,110,152,1) 100%); 
+  display: inline-block;
   padding: 25px;
   border-radius: 20px;
   box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.8);  
   font-weight: bold;
+  color: white;
 }
 .soporteParent{
   width: 100%;

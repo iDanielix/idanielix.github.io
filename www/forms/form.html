@@ -61,57 +61,103 @@
     </div>
 
     <div class="articulo">
-      <h1 style="font-size: 30pt">Formulario de Soporte</h1>
-      <p>Introduzca sus datos en los siguientes campos para contactarnos</p>
+      <h1 style="font-size: 30pt;text-align: center;">Formulario de Soporte</h1>
+      <p style="text-align: center;">Introduzca sus datos en los siguientes campos para contactarnos</p>
       <div class="soporteParent">
         <div class="soporte">
           <form action="./formError.html">
-            <label for="nombre">Nombre</label>
-            <br />
-            <input id="nombre" placeholder="Raul" type="text" />
-            <br />
-            <label for="apellidos">Apellidos</label>
-            <br />
-            <input id="apellidos" placeholder="Lopez" type="text" />
-            <br />
-            <label for="email">Email</label>
-            <br />
-            <input id="email" placeholder="ejemplo123@gmail.com" type="text" />
-            <br />
-            <label for="tlf">Numero de telefono</label>
-            <br />
-            <input id="tlf" placeholder="684 16 94 20" type="text" />
-            <br />
-            <label for="sex">Sexo</label>
-            <br />
-            <div class="sex">
-              <input type="radio" name="sex" value="Hombre" /> Hombre
-              <input type="radio" name="sex" value="Mujer" /> Mujer
-              <input type="radio" name="sex" value="Otro" /> Otro
-              <input type="radio" name="sex" value="etc" /> Prefiero no decirlo
+            <div style=" float: left; width: 50%">
+              <label for="nombre">Nombre</label>
+              <br />
+              <input
+                style="width: 100%"
+                id="nombre"
+                placeholder="Raul"
+                type="text"
+              />
+            </div>
+            <div style="float: left; width: 50%">
+              <label for="apellidos">Apellidos</label>
+              <br />
+              <input
+                style="width: 100%"
+                id="apellidos"
+                placeholder="Lopez"
+                type="text"
+              />
             </div>
             <br />
-            <label for="region">Region</label>
+            <div style="float: left; width: 50%">
+              <label for="email">Email</label>
+              <br />
+              <input
+                style="width: 100%"
+                id="email"
+                placeholder="ejemplo123@gmail.com"
+                type="text"
+              />
+            </div>
+            <div style="float: left; width: 50%">
+              <label for="tlf">Numero de telefono</label>
+              <br />
+              <input
+                style="width: 100%"
+                id="tlf"
+                placeholder="684 16 94 20"
+                type="text"
+              />
+            </div>
             <br />
-            <select id="region" name="region">
-              <option style="font-family: Arial" value="" disabled selected>
-                Selecciona tu region
-              </option>
-              <option style="font-family: Arial" value="Europa">Europa</option>
-              <option style="font-family: Arial" value="Asia">Asia</option>
-              <option style="font-family: Arial" value="Oceania">
-                Oceania
-              </option>
-              <option style="font-family: Arial" value="Africa">Africa</option>
-              <option style="font-family: Arial" value="America del Norte">
-                America del Norte
-              </option>
-              <option style="font-family: Arial" value="America del Sur">
-                America del Sur
-              </option>
-            </select>
+
             <br />
-            <label for="asunto">Asunto</label>
+
+            <br />
+            <br />
+
+            <div style="float: left; width: 50%">
+              <label for="sex">Sexo</label>
+              <br />
+              <select style="width: 100%" id="sex" name="sex">
+                <option style="font-family: Arial" value="" disabled selected>
+                  ---
+                </option>
+                <option style="font-family: Arial" value="Europa">
+                  Hombre
+                </option>
+                <option style="font-family: Arial" value="Asia">Mujer</option>
+                <option style="font-family: Arial" value="Oceania">Otro</option>
+                <option style="font-family: Arial" value="Africa">
+                  Prefiero no decirlo
+                </option>
+              </select>
+            </div>
+            <div style="float: left; width: 50%">
+              <label for="region">Region</label>
+              <br />
+              <select style="width: 100%" id="region" name="region">
+                <option style="font-family: Arial" value="" disabled selected>
+                  ---
+                </option>
+                <option style="font-family: Arial" value="Europa">
+                  Europa
+                </option>
+                <option style="font-family: Arial" value="Asia">Asia</option>
+                <option style="font-family: Arial" value="Oceania">
+                  Oceania
+                </option>
+                <option style="font-family: Arial" value="Africa">
+                  Africa
+                </option>
+                <option style="font-family: Arial" value="America del Norte">
+                  America del Norte
+                </option>
+                <option style="font-family: Arial" value="America del Sur">
+                  America del Sur
+                </option>
+              </select>
+            </div>
+            <br style="clear: both" />
+            <label style="clear: both" for="asunto">Asunto</label>
             <br />
             <input id="asunto" placeholder="" type="text" />
             <br />
