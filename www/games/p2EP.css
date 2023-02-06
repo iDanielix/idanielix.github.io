@@ -372,6 +372,9 @@ h2 {
   clear: right;
 
 }
+.charR a, .charL a{
+  color: #ffff;
+}
 .charR p{
   text-align: right;
   margin: 5px;
@@ -403,6 +406,8 @@ h2 {
   clear: both;
   padding: 3%;
   background-color: #00000041;
+  width: 95%;
+
 }
 
 
